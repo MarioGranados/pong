@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      .d-flex {
+        display: flex;
+      }
+      .justify-center {
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-direction-column {
+        flex-direction: column;
+      }
+      .margin-bottom-5 {
+        margin-bottom: 5vh;
+      }
+
+      button {
+        background-color: #1e90ff; /* Dodger Blue */
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+
+      /* Button hover effect */
+      button:hover {
+        background-color: #1c86ee; /* Slightly darker blue */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+      }
+      .margin-bottom {
+        margin-bottom: 2vh;;
+      }
+      h1,h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="d-flex justify-center flex-direction-column">
+        <h1>Controls: W = Up, S = Down</h1>
+        <button id="startgame">Start Game</button>
+        <h2 id="scoreboard">0 : 0</h2>
+        <div id="gamebox" class="margin-top-5"></div>
+        <h2>First to 10 Points wins!</h2>
+        <button class="margin-bottom" id="btnUp">Up</button>
+        <button id="btnDown">Down</button>
+      </div>
+    </main>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
