@@ -1,2 +1,2 @@
 # pong
-<p>Making the classic pong game using javascript check it out here <a href=''>Here</a></p>
+<p>check out my full project <a href='https://mariogranados.github.io/pong/'><here/a></p>
