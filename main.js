@@ -264,6 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //check if ball has gone out of bounds
     if (square.posX < 0 || square.posX > canvas.width) {
       //display score
+    
       scoreCounter.innerHTML = `${scoreBoard.p1} : ${scoreBoard.p2} `;
       resetPositions(square, playerOne, playerTwo); // Reset positions after a point
     }
@@ -282,3 +283,4 @@ document.addEventListener("DOMContentLoaded", function () {
     gameLoop();
   });
 });
+
